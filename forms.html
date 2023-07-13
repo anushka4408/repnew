@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Learning about forms</title>
+</head>
+<body>
+    <form action="/formsubmit.html" method="post" target="_blank">
+    <fieldset>
+        <legend>Personal Information</legend>
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" placeholder="name"><br>
+
+        <label for="email">Email id:</label>
+        <input type="email" id="email" placeholder="demo@gmail.com" required><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" required><br>
+        
+        <label for="profile-picture">Profile-picture:</label>
+        <input type="file" id="profile-picture" required><br>
+        
+        <label for="dob">Date of birth:</label>
+        <input type="date" id="dob" required><br>
+        
+        <label for="phone">Phone no:</label>
+        <input type="number" id="phone" placeholder="000000000" required><br>
+    </fieldset>
+    <fieldset>
+        <legend>Prefrences</legend>
+        <label for="color"> Favourite Color:</label>
+        <input type="color" id="color"><br>
+        <label>Fruit</label>
+        <select id="Fruit">
+            <option value="MANGO">Mango</option>
+            <option value="BANANA">Banana</option>
+            <option value="PINEAPPLE">Pineapple</option>
+            <option value="KIWI">Kiwi</option>
+        </select><br>
+        <label for="comments">Comments</label>
+        <textarea id="comments" rows="3" cols="40" placeholder="Enter your comments"></textarea><br><br>
+        <label for="checkbox">
+            <input type="checkbox" value="yes">
+            Subscribe to newsletter
+        </label><br>
+        <label for="gender">
+            <input type="radio" name="gender" value="female"> Female
+        </label>
+        <label for="gender">
+            <input type="radio" name="gender" value="Male"> Male
+        </label>
+        <label for="gender">
+            <input type="radio" name="gender" value="Other"> Decline to specify
+        </label><br>
+        <label for="SKILLS">SKILLS:</label>
+        <input type="text" id="skills" list="skills-list" required>
+        <datalist id="skills-list" >
+            <option value="HTML" >
+            <option value="CSS">
+            <option value="JAVASCRIPT"> 
+            <option value="PYTHON"> 
+        </datalist><br>
+        <label for="cars">Skills::</label><br>
+
+<select id="skills" multiple>
+  <option value="HTML">HTML</option>
+  <option value="CSS">CSS</option>
+  <option value="JAVASCRIPT">JAVASCRIPT</option>
+  <option value="PYTHON">PYTHON</option>
+</select>
+    </fieldset>
+    </form>
+    
+</body>
+</html>
+    
